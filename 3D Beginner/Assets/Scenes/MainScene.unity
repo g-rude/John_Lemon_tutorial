@@ -3985,6 +3985,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2056447647}
   - component: {fileID: 2056447646}
+  - component: {fileID: 2056447648}
   m_Layer: 0
   m_Name: GameEnding
   m_TagString: Untagged
@@ -4007,7 +4008,7 @@ MonoBehaviour:
   fadeDuration: 1
   displayImageDuration: 1
   player: {fileID: 809054837}
-  exitBackgroundImageCanvasGroup: {fileID: 1594345697}
+  exitBackgroundImageCanvasGroup: {fileID: 0}
 --- !u!4 &2056447647
 Transform:
   m_ObjectHideFlags: 0
@@ -4022,6 +4023,19 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!65 &2056447648
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2056447645}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1, y: 1, z: 3.5}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &2118480679
 GameObject:
   m_ObjectHideFlags: 0
