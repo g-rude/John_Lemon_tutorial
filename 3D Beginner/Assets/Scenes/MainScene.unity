@@ -352,14 +352,14 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 793304875}
-  m_LocalRotation: {x: 0.12769197, y: -0.8709303, z: 0.36075115, w: 0.3082757}
-  m_LocalPosition: {x: 3.5587459, y: 5.656855, z: 4.3971972}
+  m_LocalRotation: {x: 0.0021373203, y: -0.9238652, z: 0.38267744, w: 0.0051599485}
+  m_LocalPosition: {x: 0.063187085, y: 5.656854, z: 5.656503}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 863225834}
   m_Father: {fileID: 0}
   m_RootOrder: 4
-  m_LocalEulerAnglesHint: {x: 45, y: -141.016, z: 0}
+  m_LocalEulerAnglesHint: {x: 45, y: -179.36, z: 0}
 --- !u!1 &809054837 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 100008, guid: b44f3940c4940544a8c2c6aee5fa086f,
@@ -4008,7 +4008,7 @@ MonoBehaviour:
   fadeDuration: 1
   displayImageDuration: 1
   player: {fileID: 809054837}
-  exitBackgroundImageCanvasGroup: {fileID: 0}
+  exitBackgroundImageCanvasGroup: {fileID: 1594345697}
 --- !u!4 &2056447647
 Transform:
   m_ObjectHideFlags: 0
@@ -4031,7 +4031,7 @@ BoxCollider:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2056447645}
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
   m_Size: {x: 1, y: 1, z: 3.5}
@@ -4114,8 +4114,8 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2118480679}
-  m_LocalRotation: {x: 0.12769197, y: -0.8709303, z: 0.36075115, w: 0.3082757}
-  m_LocalPosition: {x: 3.5587459, y: 5.656855, z: 4.3971972}
+  m_LocalRotation: {x: 0.0021373203, y: -0.9238652, z: 0.38267744, w: 0.0051599485}
+  m_LocalPosition: {x: 0.063187085, y: 5.656854, z: 5.656503}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
