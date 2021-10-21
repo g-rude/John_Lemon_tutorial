@@ -35,11 +35,11 @@ public class PlayerMovement : MonoBehaviour
 
         if (isWalking)
         {
-            CreateDust();
             if (!m_AudioSource.isPlaying)
             {
                 m_AudioSource.Play();
             }
+            CreateDust();
         }
         else
         {
@@ -58,5 +58,10 @@ public class PlayerMovement : MonoBehaviour
     void CreateDust()
     {
         dust.Play();
+    }
+
+    void OnBoost()
+    {
+        m_Movement *= 5;
     }
 }
