@@ -40,7 +40,7 @@ public class PlayerMovement : MonoBehaviour
             {
                 m_AudioSource.Play();
             }
-            CreateDust();
+            
         }
         else
         {
@@ -58,11 +58,13 @@ public class PlayerMovement : MonoBehaviour
         {
             m_Rigidbody.MovePosition(m_Rigidbody.position + m_Movement * (m_Animator.deltaPosition.magnitude * 3));
             m_Rigidbody.MoveRotation(m_Rotation);
+            CreateDust();
         }
         else
         {
             m_Rigidbody.MovePosition(m_Rigidbody.position + m_Movement * m_Animator.deltaPosition.magnitude);
             m_Rigidbody.MoveRotation(m_Rotation);
+            CreateDust();
         }
 
     }
