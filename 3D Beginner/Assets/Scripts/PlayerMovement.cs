@@ -33,6 +33,7 @@ public class PlayerMovement : MonoBehaviour
         bool isWalking = hasHorizontalInput || hasVerticalInput;
         m_Animator.SetBool("IsWalking", isWalking);
 
+      
         if (isWalking)
         {
             if (!m_AudioSource.isPlaying)
@@ -52,16 +53,21 @@ public class PlayerMovement : MonoBehaviour
 
     void OnAnimatorMove()
     {
-        m_Rigidbody.MovePosition(m_Rigidbody.position + m_Movement * m_Animator.deltaPosition.magnitude);
-        m_Rigidbody.MoveRotation(m_Rotation);
+
+        if (Input.GetButton("Fire3"))
+        {
+            m_Rigidbody.MovePosition(m_Rigidbody.position + m_Movement * (m_Animator.deltaPosition.magnitude * 3));
+            m_Rigidbody.MoveRotation(m_Rotation);
+        }
+        else
+        {
+            m_Rigidbody.MovePosition(m_Rigidbody.position + m_Movement * m_Animator.deltaPosition.magnitude);
+            m_Rigidbody.MoveRotation(m_Rotation);
+        }
+
     }
     void CreateDust()
     {
         dust.Play();
-    }
-
-    void OnBoost()
-    {
-        m_Movement *= 5;
     }
 }
